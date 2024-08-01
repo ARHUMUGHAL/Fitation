@@ -1,0 +1,494 @@
+@font-face {
+    font-family: 'Axiforma-Light';
+    src: url(./Fonts/Axiforma-Light.ttf);
+}
+@font-face {
+    font-family: 'Axiforma-Regular';
+    src: url(./Fonts/Axiforma-Regular.ttf);
+}
+@font-face {
+    font-family: 'Axiforma-Semibold';
+    src: url(./Fonts/Axiforma-SemiBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* <======================================== Navbar Styling ========================================> */
+
+nav{
+    width: 100vw;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-family: 'Axiforma-Regular';
+    position: relative;
+    z-index: 50;
+}
+nav .navlogo img{
+    transform: scale(0.90);
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: .3s linear;
+}
+nav ul li a:hover{
+    color: #AFFA1B;
+}
+nav ul li:nth-child(4) a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background-color: #AFFA1B;
+    color: black;
+    border-top-left-radius: 35px;
+}
+nav ul li:nth-child(4) a:hover{
+    color: #3b5900;
+}
+
+/* <======================================== Herobox Styling ========================================> */
+
+.herobox{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    margin-top: -100px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-Image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.hero-Image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 22%;
+}
+.hero-Image::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(28,27,27);
+    background: linear-gradient(90deg, rgba(28,27,27,1) 0%, rgba(0,0,0,1) 68%);
+    position: absolute;
+    z-index: 48;
+    opacity: 20%;
+}
+.herobox h1{
+    position: absolute;
+    z-index: 60;
+    color: white;
+    top: 30%;
+    left: 50px;
+    font-family: 'Axiforma-Semibold';
+    font-size: 90px;
+    width: 40%;
+    line-height: 100px;
+}
+.herobox p{
+    color: white;
+    position: absolute;
+    z-index: 60;
+    font-family: 'Axiforma-Light';
+    font-size: 25px;
+    width: 45%;
+    top: 58%;
+    left: 50px;
+}
+.herobox a.herobox-btn-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AFFA1B;
+    width: 150px;
+    height: 55px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    z-index: 60;
+    border-top-left-radius: 35px;
+    top: 75%;
+    left: 50px;
+    font-family: 'Axiforma-Regular';
+    font-size: 18px;
+}
+.herobox a.herobox-btn-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #354710;
+    width: 150px;
+    height: 55px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    z-index: 60;
+    top: 75%;
+    left: 200px;
+    font-family: 'Axiforma-Regular';
+    font-size: 18px;
+    transition: .3s ease;
+}
+.herobox a.herobox-btn-2:hover{
+    background-color: #AFFA1B;
+    color: black;
+}
+.herobox a.herobox-btn-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 180px;
+    height: 55px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    z-index: 60;
+    top: 75%;
+    left: 30%;
+    font-family: 'Axiforma-Regular';
+    font-size: 18px;
+    transition: .3s ease;
+}
+.herobox a.herobox-btn-3:hover{
+    background-color: white;
+    color: black;
+}
+.herobox-members{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    z-index: 60;
+    top: 75%;
+    right: 60px;
+}
+.herobox-members .member{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    position: absolute;
+    overflow: hidden;
+    right: 0%;
+}
+.herobox-members .member img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.herobox-members .member:nth-child(2){
+    right: 10%;
+}
+.herobox-members .member:nth-child(3){
+    right: 22%;
+}
+.herobox-members .member:nth-child(4){
+    right: 32%;
+}
+.herobox-members .member:nth-child(5){
+    right: 42%;
+}
+.herobox-members h2{
+    color: white;
+    position: absolute;
+    top: 45%;
+    font-size: 30px;
+    font-family: 'Axiforma-Light';
+    right: 35%;
+}
+.herobox-members h4{
+    color: white;
+    font-family: 'Axiforma-Regular';
+    position: absolute;
+    top: 75%;
+    right: 18%;
+}
+
+
+/* <======================================== Section 1 Styling ========================================> */
+
+.section1{
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+    position: relative;
+}
+.top-gradient{
+    width: 100%;
+    height: 20%;
+    background: rgb(27,27,27);
+    background: linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+}
+h1.main-heading{
+    color: white;
+    font-family: 'Axiforma-Semibold';
+    font-size: 3rem;
+    width: 30%;
+    position: absolute;
+    left: 3rem;
+    top: 10rem;
+}
+p.sub-heading{
+    color: white;
+    font-family: 'Axiforma-Light';
+    width: 33%;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+}
+.mockups{
+    width: 95%;
+    height: 55%;
+    position: absolute;
+    left: 2.5rem;
+    bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mockup1{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.mockup1 .icon{
+    width: 6rem;
+    height: 6rem;
+    background-color: #AFFA1B;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.mockup1 .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0.50);
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+.mockup1 .main-image{
+    width: 100%;
+    height: 65%;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border-top-left-radius: 280px;
+    overflow: hidden;
+}
+.mockup1 .main-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 80%;
+}
+.mockup1 h1{
+    color: white;
+    font-family: 'Axiforma-Semibold';
+    position: absolute;
+    bottom: 18%;
+    font-size: 3.5rem;
+}
+.mockup1 p{
+    color: white;
+    font-family: 'Axiforma-Light';
+    position: absolute;
+    bottom: 14%;
+    right: 0%;
+    width: 60%;
+}
+.mockup2{
+    width: 15%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.mockup2 .icon{
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 90;
+}
+.mockup2 .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0.50);
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+.mockup2 img.background-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 50%;
+}
+.mockup2 .background-gradient{
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6979166666666667) 100%);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.mockup2 h1{
+    color: white;
+    position: absolute;
+    font-family: 'Axiforma-Regular';
+    transform: rotate(-90deg);
+    font-size: 3rem;
+    top: 50%;
+    right: -80%;
+    width: 200%;
+}
+.mockups .mockup2:nth-child(3) .icon img{
+    transform: scale(0.70);
+}
+.mockups .mockup2:nth-child(4) .icon img{
+    transform: scale(0.70);
+}
+
+/* <======================================== Section 2 Styling ========================================> */
+
+.section2{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.section-2-heading-group{
+    width: 40%;
+    height: 300px;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+.section-2-heading-group h1{
+    color: white;
+    font-family: 'Axiforma-Semibold';
+    font-size: 3rem;
+}
+.section-2-heading-group p{
+    color: white;
+    font-family: 'Axiforma-Light';
+    font-size: 1.1rem;
+}
+.section-2-heading-group i{
+    color: white;
+    font-size: 2.5rem;
+    overflow: hidden;
+}
+.section-2-heading-group i.fa-chevron-left{
+    position: absolute;
+    top: 65%;
+}
+.section-2-heading-group i.fa-chevron-right{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+.section-2-carousel{
+    width: 60%;
+    height: 250px;
+    position: absolute;
+    left: -20%;
+    bottom: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slide-1{
+    width: 48%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.slide-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-2-mockup{
+    width: 45%;
+    height: 550px;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+}
+.mockup-image-section-2{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-top-right-radius: 300px;
+    overflow: hidden;
+}
+.mockup-image-section-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-2-mockup-icon{
+    width: 15%;
+    height: 15%;
+    background-color: #AFFA1B;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border-bottom-left-radius: 150px;
+    overflow: hidden;
+}
+.section-2-mockup-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.40);
+    position: absolute;
+    left: 10%;
+    top: -5%;
+}
+.section-2-mockup p{
+    color: white;
+    font-family: 'Axiforma-Light';
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 0%;
+}
