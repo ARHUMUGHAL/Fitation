@@ -136,3 +136,92 @@ fifthMember.addEventListener('mouseleave',()=>{
         zIndex : 0,
     })
 })
+
+
+/* <======================================== Section 1 Animation ========================================> */
+
+gsap.to('h1.main-heading',{
+    x : '28rem',
+    duration : 1,
+    scrollTrigger : {
+        trigger : 'h1.main-heading',
+        start : '0% 60%'
+    }
+})
+
+gsap.to('p.sub-heading',{
+    x : '-38rem',
+    duration : 1,
+    scrollTrigger : {
+        trigger : 'p.sub-heading',
+        start : '0% 60%'
+    }
+})
+
+gsap.to('.mockup1 .icon',{
+    opacity : 1,
+    duration : 1,
+    scrollTrigger : {
+        trigger : '.mockup1 .icon',
+        start : '0% 60%'
+    }
+})
+
+gsap.to('.mockup1 .main-image',{
+    opacity : 1,
+    duration : 1,
+    scrollTrigger : {
+        trigger : '.mockup1 .main-image',
+        start : '0% 60%'
+    }
+})
+
+gsap.to('.mockup1 h1',{
+    opacity : 1,
+    y : '-100%',
+    duration : 1,
+    scrollTrigger : {
+        trigger : '.mockup1 h1',
+        start : '0% 85%'
+    }
+})
+
+gsap.to('.mockup1 p',{
+    opacity : 1,
+    y : '-100%',
+    duration : 1,
+    scrollTrigger : {
+        trigger : '.mockup1 p',
+        start : '0% 85%'
+    }
+})
+gsap.to('.mock-2',{
+    opacity : 1,
+    y : '-20%',
+    duration : 1,
+    scrollTrigger : {
+        trigger : '.mock-2',
+        start : '0% 60%',
+    }
+})
+
+gsap.to('.mock-3',{
+    opacity : 1,
+    y : '-20%',
+    delay : .5,
+    duration : 1,
+    scrollTrigger : {
+        trigger : '.mock-3',
+        start : '0% 60%'
+    }
+})
+gsap.to('.mock-4',{
+    opacity : 1,
+    y : '-20%',
+    delay : 1.2,
+    duration : 1,
+    scrollTrigger : {
+        trigger : '.mock-4',
+        start : '0% 60%'
+    }
+})
