@@ -225,3 +225,150 @@ gsap.to('.mock-4',{
         start : '0% 60%'
     }
 })
+
+
+/* <======================================== Section 2 Animation ========================================> */
+
+gsap.to('.section-2-heading-group h1',{
+    transform : 'translateX(0%)',
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section-2-heading-group h1',
+        start : 'top 70%'
+    }
+})
+
+gsap.to('.section-2-heading-group p',{
+    transform : 'translateX(0%)',
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section-2-heading-group p',
+        start : 'top 70%'
+    }
+})
+gsap.to('.section-2-heading-group i',{
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section-2-heading-group i',
+        start : 'top 70%'
+    }
+})
+gsap.to('.section-2-carousel',{
+    transform : 'translateX(0%)',
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section-2-carousel',
+        start : 'top 70%'
+    }
+})
+
+gsap.to('.mockup-image-section-2',{
+    transform : 'translateY(0%)',
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.mockup-image-section-2',
+        start : 'top 70%'
+    }
+})
+
+gsap.to('.section-2-mockup-icon',{
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section-2-mockup-icon',
+        start : 'top 70%'
+    }
+})
+
+gsap.to('.section-2-mockup p',{
+    transform : 'translateY(0%)',
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section-2-mockup p',
+        start : 'top 70%'
+    }
+})
+
+
+/* <======================================== Section 3 Animation ========================================> */
+
+gsap.to('.section3 h1',{
+    transform : 'translateX(0%)',
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section3 h1',
+        start : 'top 70%'
+    }
+})
+
+gsap.to('.section3 p',{
+    transform : 'translateX(0%)',
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section3 p',
+        start : 'top 70%'
+    }
+})
+
+gsap.to('.slide-1-section3',{
+    transform : 'translateY(0%)',
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.slide-1-section3',
+        start : 'top 70%',
+    }
+})
+
+/* <======================================== Section 4 Animation ========================================> */
+
+gsap.to('.section4 h1',{
+    transform : 'translateY(0%)',
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section4 h1',
+        start : 'top 70%',
+    }
+})
+gsap.to('.section4 a.section4-btn1',{
+    transform : 'translateY(0%)',
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.section4 a.section4-btn1',
+        start : 'top 70%',
+    }
+})
+
+
+/* <======================================== Footer Animation ========================================> */
+
+gsap.to('.footer-logo',{
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.footer-logo',
+    }
+})
+
+gsap.to('.links',{
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.links',
+    }
+})
+
+gsap.to('.terms',{
+    opacity : 1,
+    duration : 1.2,
+    scrollTrigger : {
+        trigger : '.terms',
+    }
+})
